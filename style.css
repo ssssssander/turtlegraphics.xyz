@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-color: #000;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+ul {
+	list-style-type: none;
+}
+button {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+h1 {
+	display: inline-block;
+	margin: 10px 0;
+}
+span {
+	margin-left: 10px;
+	vertical-align: super;
+}
+.canvas-wrapper {
+	position: relative;
+}
+.examples-wrapper, .instructions-wrapper {
+	margin-left: 10px;
+}
+.instructions-wrapper {
+	width: 40%;
+	line-height: 1.5;
+}
+.instructions-wrapper li {
+	padding-left: 20px;
+	background-color: #222;
+}
+.instructions-wrapper li:nth-child(odd) {
+	background-color:#111;
+}
+.instructions-wrapper li:hover {
+	background-color: #333;
+}
+#examples {
+	margin-top: 10px;
+}
+#examples button {
+	width: 100%;
+	padding: 5px;
+	background-color: #ccc;
+	border: 1px solid #000;
+	color: #000;
+}
+#examples button:hover {
+	background-color: #fff;
+}
+.canvas-footer {
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+}
+#code-input {
+	width: 89%;
+	font-size: 1.5em;
+	resize: none;
+	font-family: courier new, serif;
+}
+#code-button {
+	width: 10%;
+}
+#canvas {
+	width: 600px;
+	height: 600px;
+	border: 1px solid #fff;
+}
+.credits {
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+#warning {
+	width: 600px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	font-size: 0.8em;
+	text-align: center;
+	color: #ff0000;
+}
+@media only screen and (max-width: 1274px) {
+	body {
+		justify-content: flex-start;
+	}
+}

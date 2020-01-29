@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Turtle Graphics</title>
+</head>
+<body>
+	<div class="canvas-wrapper">
+		<canvas id="canvas" width="600" height="600">
+			Deze browser ondersteund het canvas element niet! Gebruik een nieuwere browser.
+		</canvas>
+		<div id="warning"></div>
+		<div class="canvas-footer">
+			<textarea type="text" id="code-input"></textarea>
+			<button id="code-button">Herteken</a>
+		</div>
+	</div>
+	<div class="examples-wrapper">
+		<div>Probeer deze uit!</div>
+		<ul id="examples"></ul>
+	</div>
+	<div class="instructions-wrapper">
+		<div class="instructions">
+			<h1>Instructies</h1>
+			<ul>
+				<li>f : <b>f</b>orward – ga naar voor en teken in de huidige richting</li>
+				<li>n : <b>n</b>o drawing – ga naar voor zonder te tekenen</li>
+				<li>- : ga naar achter zonder te tekenen</li>
+				<li>c : teken een gevulde <b>c</b>irkel</li>
+				<li>l : draai naar <b>l</b>inks</li>
+				<li>r : draai naar <b>r</b>echts</li>
+				<li>d : <b>d</b>upliceren – maak een kopie van de huidige vorm in de huidige richting</li>
+				<li>b : <b>b</b>ranch – dupliceer of doe niks, willekeurig</li>
+				<li>s : <b>s</b>tep – ga naar voor en teken of doe niks, willekeurig</li>
+				<li>t : <b>t</b>urn – ga naar links of rechts, willekeurig</li>
+				<li>? : ga naar links, rechts, of draai niet, willekeurig</li>
+				<li>m : <b>m</b>irror - 50% kans dat links en rechts draaien omgekeerd zijn</li>
+			</ul>
+		</div>
+		<div class="initial-values">
+			<h1>Beginwaarden</h1><span>* = getal</span>
+			<ul>
+				<li>a:*; : <b>a</b>ngle – definieer de hoek van één draaiing</li>
+				<li>g:*; : <b>g</b>enerations – maximum aantal kopieën als de dupliceerinstructie wordt gebruikt</li>
+				<li>s:*; : <b>s</b>tarting angle – definieer de beginnende hoek</li>
+				<li>b:*; : <b>b</b>ranching – gebruik dit om symmetrische vormen te maken</li>
+				<li>c:*; : definieer grootte van <b>c</b>irkels</li>
+				<li>d:*; : <b>d</b>istance - definieer afstand van 1 stap</li>
+				<li>r:*; : definieer <b>r</b>atio (een getal tussen 0 en 2). Een ratio van 0.5 betekent dat elke kopie (van de dupliceerinstructie) de helft in grootte zal zijn in vergelijking met de vorige</li>
+			</ul>
+		</div>
+	</div>
+	<div class="credits">
+		Gebaseerd op <a href="http://orteil.dashnet.org/lsystem">http://orteil.dashnet.org/lsystem</a>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
